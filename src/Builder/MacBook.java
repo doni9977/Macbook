@@ -16,18 +16,18 @@ public class MacBook {
     }
 
     public String getModel() { return model; }
-    public String geCpu() { return cpu; }
-    public int gerRam() { return ram; }
-    public int storage() { return storage; }
+    public String getCpu() { return cpu; }
+    public int getRam() { return ram; }
+    public int getStorage() { return storage; }
 
     @Override
     public String toString(){
         return "MacBook {" +
-                "model= '" + model + '\'' +
-                ", cpu='" + cpu + '\'' +
+                "model= " + model +
+                ", cpu=" + cpu +
                 ", ram=" + ram + "GB" +
                 ", storage=" + storage + "GB" +
-                ", color='" + color +  '\'' + '}';
+                ", color=" + color + '}';
     }
 
     public static class Builder {
@@ -51,7 +51,7 @@ public class MacBook {
             this.ram = ram;
             return this;
         }
-        public Builder withStrage(int storage){
+        public Builder withStorage(int storage){
             this.storage = storage;
             return this;
         }
